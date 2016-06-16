@@ -15,7 +15,7 @@ namespace DatabaseEditor
 
             DisplayMainMenu(db, Users);
         }
-
+        //test
         private static DataContext getDataContext() //NEEDS TO BE CHANGED FOR DIFFERENT SERVERS
         {
             return new DataContext(@"

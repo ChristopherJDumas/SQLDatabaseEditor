@@ -15,11 +15,13 @@ namespace DatabaseEditor
 
             DisplayMainMenu(db, Users);
         }
-        //test
+        
         private static DataContext getDataContext() //NEEDS TO BE CHANGED FOR DIFFERENT SERVERS
         {
+            Console.WriteLine("Enter your sever's name");
+            string str = Console.ReadLine();
             return new DataContext(@"
-            Server=CHRIS-WINDOWS;
+            Server="+str+@";
             Database=NETData;
             Trusted_Connection=Yes;"
             );
